@@ -18,16 +18,15 @@
 //P: Make a function that takes in two parameters: an array and a rando number
 function numInArray(arr, num) {
   //look through the array and see if there are any elements that match num
-<<<<<<< HEAD
   return arr.includes(num)
-=======
-  return arr.map((elem) => (elem === num ? true : false))
->>>>>>> bf2aceb521c29b8e3976bf4e0b9bd1b85f6cbf49
   //conditional: if they do, return TRUE, else return FALSE
 }
 
 numInArray([1, 2, 3], 4) //should return false
-<<<<<<< HEAD
 numInArray([7, 6, 3, 2], 6) //should return true
-=======
->>>>>>> bf2aceb521c29b8e3976bf4e0b9bd1b85f6cbf49
+
+//was not this: this returned a new array with just falses and trues
+//and we needed just one. This new way above was less complicated
+//function numInArray(arr, num) {
+//console.log(arr.map(elem=>elem === num ? true : false))
+//}
