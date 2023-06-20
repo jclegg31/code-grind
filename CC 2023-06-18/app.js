@@ -32,3 +32,12 @@ reverseArray(9544) //should return 4459
 console.log(reverseArray(2356), [6532])
 
 //didn't work, try map
+function reverseArray(num) {
+  //make number a string and split it up
+  let numArray = num.toString().split('').reverse()
+
+  //reverse array
+  //make array integers again and return
+  return numArray.map((e) => parseInt(e))
+}
+//just needed to map through and make each string element into an integer
